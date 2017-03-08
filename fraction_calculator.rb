@@ -10,12 +10,19 @@ require 'rspec'
 ##
 
 def fraction_calculator fraction_one, fraction_two, operator
-    case operator
-        when '/' then Rational(fraction_one) / Rational(fraction_two)
-        when '*' then Rational(fraction_one) * Rational(fraction_two)
-        when '+' then Rational(fraction_one) + Rational(fraction_two)
-        when '-' then Rational(fraction_one) - Rational(fraction_two)
+    num_one = Rational(fraction_one)
+    num_two = Rational(fraction_two)
+    
+    final_result = case operator
+        when '/' then num_one / num_two
+        when '*' then num_one * num_two
+        when '+' then num_one + num_two
+        when '-' then num_one - num_two
     end
+
+    String(final_result)
+
+    print String(final_result)
 
 end
 
@@ -33,4 +40,4 @@ describe 'Fraction calculator' do
 
 end
 
-fraction_calculator("1/3", "2/4", "*")     # => (1/6)
+# fraction_calculator("1/3", "2/4", "*")     # => (1/6)
