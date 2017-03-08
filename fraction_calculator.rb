@@ -40,4 +40,6 @@ describe 'Fraction calculator' do
 
 end
 
-# fraction_calculator("1/3", "2/4", "*")     # => (1/6)
+puts
+fraction_calculator("1/3", "2/4", "*")
+puts 
