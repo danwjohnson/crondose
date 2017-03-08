@@ -2,6 +2,16 @@
 
 require 'rspec'
 
+##
+# Summary : Build a FizzBuzz program that stores the FizzBuzz data in a hash data structure.
+#
+# Exercise Description
+# Write a program that prints the numbers from 1 to 100. 
+# But for multiples of three print “Fizz” instead of the number 
+# and for the multiples of five print “Buzz”, and for values 
+# that are multiples of three and five print out “FizzBuzz”. – Interview Question Specification by Tom Dalling
+##
+
 def hashed_fizz_buzz num
     hash = Hash.new
 
